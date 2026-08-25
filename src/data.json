@@ -1,0 +1,76 @@
+{
+  "ciphers": [
+    {
+      "category": "Monoalphabetic Ciphers",
+      "description": "Single-substitution methods where each letter is replaced consistently throughout the message.",
+      "items": [
+        {
+          "id": "additive",
+          "name": "Additive Cipher",
+          "image": "/images/additive.png",
+          "description": "A cipher where each letter is shifted by a fixed value"
+        },
+        {
+          "id": "multiplicative",
+          "name": "Multiplicative Cipher",
+          "image": "/images/multiplicative.png",
+          "description": "A cipher where each letter is multiplied by a fixed value"
+        },
+        {
+          "id": "affine",
+          "name": "Affine Cipher",
+          "image": "/images/affine.png",
+          "description": "A combination of additive and multiplicative ciphers"
+        }
+      ]
+    },
+    {
+      "category": "Polyalphabetic Ciphers",
+      "description": "Advanced methods using multiple substitution alphabets for enhanced security.",
+      "items": [
+        {
+          "id": "autokey",
+          "name": "Autokey Cipher",
+          "image": "/images/autokey.png",
+          "description": "A cipher that uses the plaintext itself as part of the key"
+        },
+        {
+          "id": "playfair",
+          "name": "Playfair Cipher",
+          "image": "/images/playfair.png",
+          "description": "A cipher that encrypts pairs of letters instead of single letters"
+        },
+        {
+          "id": "vigenere",
+          "name": "Vigenère Cipher",
+          "image": "/images/vigenere.jpg",
+          "description": "A cipher that uses a keyword to determine the shift for each letter"
+        }
+      ]
+    },
+    {
+      "category": "Transposition Ciphers",
+      "description": "Methods that rearrange letters without replacing them, changing the order rather than the identity.",
+      "items": [
+        {
+          "id": "railfence",
+          "name": "Rail Fence Cipher",
+          "image": "/images/railfence.png",
+          "description": "A zigzag transposition cipher that writes text in a zigzag pattern"
+        }
+      ]
+    },
+    {
+      "category": "Asymmetric Cryptography",
+      "description": "Encryption systems using a pair of keys – public and private – for secure communication.",
+      "items": [
+        {
+          "id": "RSA",
+          "name": "RSA Cryptosystem",
+          "image": "/images/rsa-algorithm-feature.jpg",
+          "description": "RSA uses modular exponentiation for encryption and decryption. To attack it, Eve needs to calculate e^C mod n."
+        }
+      ]
+    }
+  ]
+}
