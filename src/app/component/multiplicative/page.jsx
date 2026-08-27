@@ -9,7 +9,7 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const MultiplicativeCipherUI = () => {
   const [plaintext, setPlaintext] = useState("HELLO");
-  const [key, setKey] = useState("7");
+  const [key, setKey] = useState(7);
   const [mode, setMode] = useState("encrypt");
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
@@ -195,6 +195,7 @@ const MultiplicativeCipherUI = () => {
             keyValue={key}
             label="Key (must be coprime with 26)"
             setKey={setKey}
+            type="number"
           />
         </div>
 

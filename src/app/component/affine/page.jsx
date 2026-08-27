@@ -9,8 +9,8 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const AffineCipherUI = () => {
   const [plaintext, setPlaintext] = useState("HELLO WORLD");
-  const [a, setA] = useState("5");
-  const [b, setB] = useState("8");
+  const [a, setA] = useState(5);
+  const [b, setB] = useState(8);
   const [mode, setMode] = useState("encrypt");
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
@@ -199,8 +199,14 @@ const AffineCipherUI = () => {
             keyValue={a}
             label="Key 'a' (must be coprime with 26)"
             setKey={setA}
+            type="number"
           />
-          <KeyInput keyValue={b} label="Key 'b' (shift value)" setKey={setB} />
+          <KeyInput
+            keyValue={b}
+            label="Key 'b' (shift value)"
+            setKey={setB}
+            type="number"
+          />
         </div>
 
         <TextInput value={plaintext} onChange={setPlaintext} mode={mode} />

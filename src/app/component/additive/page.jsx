@@ -7,7 +7,7 @@ import Button from "@/app/layout/Button";
 
 const AdditiveCipherUI = () => {
   const [plaintext, setPlaintext] = useState("HELLO");
-  const [key, setKey] = useState("3");
+  const [key, setKey] = useState(3);
   const [mode, setMode] = useState("encrypt");
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
@@ -182,11 +182,9 @@ const AdditiveCipherUI = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
           <ModeToggle mode={mode} setMode={setMode} />
-          <KeyInput keyValue={key} label="Key" setKey={setKey} />
+          <KeyInput keyValue={key} label="Key" setKey={setKey} type="number" />
         </div>
-
         <TextInput value={plaintext} onChange={setPlaintext} mode={mode} />
-
         <div className="mt-4 sm:mt-6">
           <Button onClick={handleProcess} mode={mode} />
         </div>
