@@ -59,18 +59,6 @@
           "description": "A zigzag transposition cipher that writes text in a zigzag pattern"
         }
       ]
-    },
-    {
-      "category": "Asymmetric Cryptography",
-      "description": "Encryption systems using a pair of keys – public and private – for secure communication.",
-      "items": [
-        {
-          "id": "RSA",
-          "name": "RSA Cryptosystem",
-          "image": "/images/rsa-algorithm-feature.jpg",
-          "description": "RSA uses modular exponentiation for encryption and decryption. To attack it, Eve needs to calculate e^C mod n."
-        }
-      ]
     }
   ]
 }
