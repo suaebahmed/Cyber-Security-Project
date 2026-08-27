@@ -7,7 +7,7 @@ import Button from "@/app/layout/Button";
 
 const AutokeyCipherUI = () => {
   const [plaintext, setPlaintext] = useState("HELLO");
-  const [key, setKey] = useState("ATIK");
+  const [key, setKey] = useState("S");
   const [mode, setMode] = useState("encrypt");
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
